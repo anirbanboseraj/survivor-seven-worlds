@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SURVIVOR: Seven Worlds</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="shell">
+    <header><div><p class="eyebrow">A SEVEN-WORLD ADVENTURE</p><h1>SURVIVOR <span>VII</span></h1></div><button id="restart">↻ Restart</button></header>
+    <section class="hud">
+      <div><small>WORLD</small><strong id="levelText">1 / 7 — Dark Forest</strong></div>
+      <div><small>HEALTH</small><div class="healthTrack"><div id="healthBar"></div></div><strong id="healthText">100 / 100</strong></div>
+      <div><small>SCORE</small><strong id="scoreText">0000</strong></div>
+    </section>
+    <div class="canvasWrap"><canvas id="game" width="960" height="540"></canvas>
+      <div id="overlay" class="overlay"><div class="overlayCard"><p class="eyebrow">YOUR JOURNEY BEGINS</p><h2 id="overlayTitle">SURVIVOR: SEVEN WORLDS</h2><p id="overlayMessage">Defeat every enemy, collect health, and reach the portal to travel through seven worlds.</p><button id="start">Start Adventure</button></div></div>
+    </div>
+    <section class="controls"><div><kbd>A</kbd> <kbd>D</kbd> or <kbd>←</kbd> <kbd>→</kbd> <span>Move</span></div><div><kbd>W</kbd> / <kbd>↑</kbd> / <kbd>Space</kbd> <span>Jump</span></div><div><kbd>J</kbd> <span>Sword attack</span></div><div><kbd>R</kbd> <span>Restart</span></div></section>
+    <p class="tip">Defeat all enemies to unlock the glowing portal. Green potions restore health.</p>
+  </main>
+  <script src="game.js"></script>
+</body>
+</html>
